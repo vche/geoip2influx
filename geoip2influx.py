@@ -99,7 +99,7 @@ class NginxLogParser():
             influxdb_user_pass=env.get('INFLUX_PASS', cls.DEFAULT_INFLUX_PASS),
             influxdb_retention=env.get('INFLUX_RETENTION', cls.DEFAULT_INFLUX_RETENTION),
             influxdb_shard=env.get('INFLUX_SHARD', cls.DEFAULT_INFLUX_SHARD),
-            geo_measurement=env.get('GEO_MEASUREMENT', cls.DEFAULT_INFLUX_SHARD),
+            geo_measurement=env.get('GEO_MEASUREMENT', cls.DEFAULT_GEO_MEASUREMENT),
             log_measurement=env.get('LOG_MEASUREMENT', cls.DEFAULT_LOG_MEASUREMENT),
             send_nginx_logs=env.get('SEND_NGINX_LOGS', cls.DEFAULT_SEND_NGINX_LOGS),
         )
